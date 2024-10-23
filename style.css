@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8ad6f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #0b0a0a;
+}
+
+.add-customer {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+label {
+    margin-right: 15px;
+}
+
+input, select {
+    padding: 10px;
+    margin-right: 15px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #0bdc3c;
+    color: white;
+    border: 2px solid rgb(20, 10, 62);
+    border-radius: 7px;
+}
+
+button:hover {
+    background-color: #09f03b;
+}
+
+.queues {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 50px;
+}
+
+.queue {
+    width: 18%;
+    background-color: #d5f3c3;
+    padding: 12px;
+    text-align: center;
+}
+
+.queue ul {
+    list-style-type:lower-roman;
+}
+
+.queue li {
+    padding: 7px;
+    background-color: #7eef7a;
+    margin-bottom: 7px;
+    border-radius: 5px;
+}
+
+.current-service, .metrics {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#currentCustomer {
+    font-weight: bold;
+}
+
+#metrics {
+    color: #555;
+}
