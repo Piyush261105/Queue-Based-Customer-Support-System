@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Queue Customer Service System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Queue Customer Service System</h1>
+
+        <div class="add-customer">
+            <h2>Add Customer Request</h2>
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" placeholder="Enter customer name">
+            <label for="priorityLevel">Priority Level:</label>
+            <select id="priorityLevel">
+                <option value="1">Critical (Queue 1)</option>
+                <option value="2">High (Queue 2)</option>
+                <option value="3">Medium (Queue 3)</option>
+                <option value="4">Low (Queue 4)</option>
+                <option value="5">General (Queue 5)</option>
+            </select>
+            <button onclick="addCustomer()">Add Customer</button>
+        </div>
+
+        <div class="queues">
+            <h2>Customer Queues</h2>
+            <div class="queue" id="queue1">
+                <h3>Critical Priority (Queue 1)</h3>
+                <ul id="list1"></ul>
+            </div>
+            <div class="queue" id="queue2">
+                <h3>High Priority (Queue 2)</h3>
+                <ul id="list2"></ul>
+            </div>
+            <div class="queue" id="queue3">
+                <h3>Medium Priority (Queue 3)</h3>
+                <ul id="list3"></ul>
+            </div>
+            <div class="queue" id="queue4">
+                <h3>Low Priority (Queue 4)</h3>
+                <ul id="list4"></ul>
+            </div>
+            <div class="queue" id="queue5">
+                <h3>General Service (Queue 5)</h3>
+                <ul id="list5"></ul>
+            </div>
+        </div>
+
+        <div class="current-service">
+            <h2>Currently Serving</h2>
+            <p id="currentCustomer">No customer being served</p>
+            <button onclick="serveCustomer()">Serve Next Customer</button>
+        </div>
+
+        <div class="metrics">
+            <h2>Metrics</h2>
+            <p id="metrics">No metrics available yet.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
